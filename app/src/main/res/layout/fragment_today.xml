@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.TodayFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DAD7D7"
+        android:layout_gravity="center"
+        android:gravity="top"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgView"
+            android:visibility="gone"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="Today"
+            android:id="@+id/date"
+            android:textStyle="normal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            />
+        <TextView
+            android:layout_below="@id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:text="25"
+            android:textSize="40dp"
+            android:id="@+id/temperature"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/temperature"
+            android:textStyle="bold"
+            android:text=""
+            android:id="@+id/tv1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/tv1"
+            android:text=""
+            android:id="@+id/tv2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            />
+    </RelativeLayout>
+
+</FrameLayout>
