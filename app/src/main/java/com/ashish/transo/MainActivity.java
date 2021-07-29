@@ -5,10 +5,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
-
 import android.os.Bundle;
 import android.widget.FrameLayout;
-
 import com.ashish.transo.Fragments.TodayFragment;
 import com.ashish.transo.Fragments.TomorrowFragment;
 import com.google.android.material.tabs.TabLayout;
@@ -36,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         tab.addTab(tab.newTab().setText("Today"));
         tab.addTab(tab.newTab().setText("Next 4 Days"));
 
+
         fragment = new TodayFragment();
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
@@ -46,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
          tab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
              @Override
              public void onTabSelected(TabLayout.Tab tab) {
+
+
                  switch (tab.getPosition()) {
                      case 0:
                          fragment = new TodayFragment();

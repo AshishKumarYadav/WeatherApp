@@ -4,7 +4,7 @@ public class ResponseModel {
 
     private Request request;
 
-    private Location location;
+    private LocationPojo location;
 
     private Current current;
 
@@ -31,10 +31,10 @@ public class ResponseModel {
     public Request getRequest(){
         return this.request;
     }
-    public void setLocation(Location location){
+    public void setLocation(LocationPojo location){
         this.location = location;
     }
-    public Location getLocation(){
+    public LocationPojo getLocation(){
         return this.location;
     }
     public void setCurrent(Current current){

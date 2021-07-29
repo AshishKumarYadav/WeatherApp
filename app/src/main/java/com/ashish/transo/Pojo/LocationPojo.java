@@ -1,6 +1,6 @@
 package com.ashish.transo.Pojo;
 
-public class Location {
+public class LocationPojo {
 
     private String name;
 

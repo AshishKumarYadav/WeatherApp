@@ -4,7 +4,7 @@ public class ForecastResponseModel {
 
     private Request request;
 
-    private Location location;
+    private LocationPojo location;
 
     private Current current;
 
@@ -34,11 +34,11 @@ public class ForecastResponseModel {
         this.request = request;
     }
 
-    public Location getLocation() {
+    public LocationPojo getLocation() {
         return location;
     }
 
-    public void setLocation(Location location) {
+    public void setLocation(LocationPojo location) {
         this.location = location;
     }
 

@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="10dp"
-        app:tabGravity="fill"
         app:tabMode="fixed"
         app:tabTextColor="@color/teal_700"
         android:background="@color/white">
@@ -24,13 +23,14 @@
         android:layout_height="1dp"/>
     <FrameLayout
         android:layout_below="@id/tabLayout"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/frame_layout"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
